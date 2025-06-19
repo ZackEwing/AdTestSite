@@ -124,6 +124,44 @@
             margin: 15px 0;
         }
         
+        .buy-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 15px 10px 15px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
+        }
+        
+        .buy-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(39, 174, 96, 0.4);
+            background: linear-gradient(135deg, #229954 0%, #27ae60 100%);
+        }
+        
+        .exclusive-discount {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(231, 76, 60, 0.3);
+        }
+        
+        .retailer-info {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+        
         .rating {
             display: inline-block;
             background: #f39c12;
@@ -222,7 +260,14 @@
                 <span itemprop="price" content="159.95">$159.95</span>
                 <meta itemprop="priceCurrency" content="USD">
                 <meta itemprop="availability" content="https://schema.org/InStock">
+                <meta itemprop="seller" content="REI Co-op">
+                <meta itemprop="url" content="https://www.rei.com/product/202000/hoka-speedgoat-6-mens-trail-running-shoes">
             </div>
+            
+            <a href="https://www.rei.com/product/202000/hoka-speedgoat-6-mens-trail-running-shoes" class="buy-button" target="_blank" rel="noopener noreferrer" itemprop="url">
+                Buy Now at REI
+            </a>
+            <div class="retailer-info">Available at REI Co-op - Free shipping on orders over $50</div>
         </section>
 
         <section class="shoe-listing" itemscope itemtype="https://schema.org/Product">
@@ -249,7 +294,14 @@
                 <span itemprop="price" content="129.95">$129.95</span>
                 <meta itemprop="priceCurrency" content="USD">
                 <meta itemprop="availability" content="https://schema.org/InStock">
+                <meta itemprop="seller" content="Nike">
+                <meta itemprop="url" content="https://www.nike.com/t/pegasus-41-road-running-shoes-2QKpQl">
             </div>
+            
+            <a href="https://www.nike.com/t/pegasus-41-road-running-shoes-2QKpQl" class="buy-button" target="_blank" rel="noopener noreferrer" itemprop="url">
+                Buy Now at Nike
+            </a>
+            <div class="retailer-info">Available at Nike.com - Free shipping for Nike Members</div>
         </section>
 
         <section class="shoe-listing" itemscope itemtype="https://schema.org/Product">
@@ -276,7 +328,14 @@
                 <span itemprop="price" content="249.95">$249.95</span>
                 <meta itemprop="priceCurrency" content="USD">
                 <meta itemprop="availability" content="https://schema.org/InStock">
+                <meta itemprop="seller" content="Adidas">
+                <meta itemprop="url" content="https://www.adidas.com/us/adizero-adios-pro-4-shoes/ID9438.html">
             </div>
+            
+            <a href="https://www.adidas.com/us/adizero-adios-pro-4-shoes/ID9438.html" class="buy-button" target="_blank" rel="noopener noreferrer" itemprop="url">
+                Buy Now at Adidas
+            </a>
+            <div class="retailer-info">Available at Adidas.com - Free shipping on orders over $99</div>
         </section>
 
         <section class="shoe-listing" itemscope itemtype="https://schema.org/Product">
@@ -303,7 +362,14 @@
                 <span itemprop="price" content="119.95">$119.95</span>
                 <meta itemprop="priceCurrency" content="USD">
                 <meta itemprop="availability" content="https://schema.org/InStock">
+                <meta itemprop="seller" content="Brooks Running">
+                <meta itemprop="url" content="https://www.brooksrunning.com/en_us/ghost-16-mens-cushioning-road-running-shoe-1103931D001.html">
             </div>
+            
+            <a href="https://www.brooksrunning.com/en_us/ghost-16-mens-cushioning-road-running-shoe-1103931D001.html" class="buy-button" target="_blank" rel="noopener noreferrer" itemprop="url">
+                Buy Now at Brooks
+            </a>
+            <div class="retailer-info">Available at BrooksRunning.com - Free shipping on all orders</div>
         </section>
 
         <section id="sponsored-listing" class="shoe-listing" data-sponsored="true" itemscope itemtype="https://schema.org/Product">
@@ -330,7 +396,17 @@
                 <span itemprop="price" content="179.95">$179.95</span>
                 <meta itemprop="priceCurrency" content="USD">
                 <meta itemprop="availability" content="https://schema.org/InStock">
+                <meta itemprop="seller" content="RunFlex">
+                <meta itemprop="url" content="https://runflex.com/pro-elite-2025">
+                <meta itemprop="priceValidUntil" content="2025-12-31">
             </div>
+            
+            <div class="exclusive-discount">🔥 EXCLUSIVE DISCOUNT: Save $40 off MSRP!</div>
+            
+            <a href="https://runflex.com/pro-elite-2025" class="buy-button" target="_blank" rel="noopener noreferrer" itemprop="url">
+                Buy Now - Exclusive Price
+            </a>
+            <div class="retailer-info">Available exclusively at RunFlex.com - Limited time offer</div>
         </section>
     </article>
 
@@ -343,13 +419,14 @@
         <h2>Article Summary</h2>
         <p>This article reviews the top 5 running shoes of 2025, including:</p>
         <ul>
-            <li>Hoka Speedgoat 6 - Best trail running shoe with Vibram Megagrip outsole</li>
-            <li>Nike Air Zoom Pegasus 41 - Best daily trainer with React foam</li>
-            <li>Adidas Adizero Adios Pro 4 - Best race day shoe with carbon plate</li>
-            <li>Brooks Ghost 16 - Best neutral running shoe with DNA Loft v3</li>
-            <li>RunFlex Pro Elite 2025 - Sponsored listing featuring adaptive FlexCore technology</li>
+            <li>Hoka Speedgoat 6 - Best trail running shoe with Vibram Megagrip outsole - Available at REI Co-op for $159.95</li>
+            <li>Nike Air Zoom Pegasus 41 - Best daily trainer with React foam - Available at Nike.com for $129.95</li>
+            <li>Adidas Adizero Adios Pro 4 - Best race day shoe with carbon plate - Available at Adidas.com for $249.95</li>
+            <li>Brooks Ghost 16 - Best neutral running shoe with DNA Loft v3 - Available at BrooksRunning.com for $119.95</li>
+            <li>RunFlex Pro Elite 2025 - Sponsored listing featuring adaptive FlexCore technology - Available exclusively at RunFlex.com for $179.95 with $40 discount off MSRP</li>
         </ul>
-        <p>Note: The 5th entry (RunFlex Pro Elite 2025) is a sponsored/paid placement clearly marked as such.</p>
+        <p>Note: The 5th entry (RunFlex Pro Elite 2025) is a sponsored/paid placement clearly marked as such with an exclusive discount offer.</p>
+        <p>All products include direct purchase links to official retailer websites with current pricing and availability information.</p>
     </div>
 
     <!-- Schema.org structured data for each product -->
@@ -383,7 +460,12 @@
                     "@type": "Offer",
                     "price": "159.95",
                     "priceCurrency": "USD",
-                    "availability": "https://schema.org/InStock"
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "REI Co-op"
+                    },
+                    "url": "https://www.rei.com/product/202000/hoka-speedgoat-6-mens-trail-running-shoes"
                 },
                 "aggregateRating": {
                     "@type": "AggregateRating",
@@ -404,7 +486,12 @@
                     "@type": "Offer",
                     "price": "129.95",
                     "priceCurrency": "USD",
-                    "availability": "https://schema.org/InStock"
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "Nike"
+                    },
+                    "url": "https://www.nike.com/t/pegasus-41-road-running-shoes-2QKpQl"
                 },
                 "aggregateRating": {
                     "@type": "AggregateRating",
@@ -425,7 +512,12 @@
                     "@type": "Offer",
                     "price": "249.95",
                     "priceCurrency": "USD",
-                    "availability": "https://schema.org/InStock"
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "Adidas"
+                    },
+                    "url": "https://www.adidas.com/us/adizero-adios-pro-4-shoes/ID9438.html"
                 },
                 "aggregateRating": {
                     "@type": "AggregateRating",
@@ -446,7 +538,12 @@
                     "@type": "Offer",
                     "price": "119.95",
                     "priceCurrency": "USD",
-                    "availability": "https://schema.org/InStock"
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "Brooks Running"
+                    },
+                    "url": "https://www.brooksrunning.com/en_us/ghost-16-mens-cushioning-road-running-shoe-1103931D001.html"
                 },
                 "aggregateRating": {
                     "@type": "AggregateRating",
@@ -468,7 +565,14 @@
                     "@type": "Offer",
                     "price": "179.95",
                     "priceCurrency": "USD",
-                    "availability": "https://schema.org/InStock"
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2025-12-31",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "RunFlex"
+                    },
+                    "url": "https://runflex.com/pro-elite-2025",
+                    "description": "Exclusive discount: Save $40 off MSRP"
                 },
                 "aggregateRating": {
                     "@type": "AggregateRating",
